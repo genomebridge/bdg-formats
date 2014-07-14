@@ -382,6 +382,11 @@ record ADAMFeature {
   // strand -- parsed into strand
   union { null, long } frame = null;
 
+  // These two are added back in as a patch to 0.1.1, 
+  // they'll need to be re-written in 0.1.2
+  union { null, string } featureType = null;
+  union { null, string } source = null;
+
   // narrowPeak format - (BED6+4)
   union { null, double } signalValue = null;
   union { null, double } pValue = null;
